@@ -6,7 +6,7 @@ interface ListGroupProps{
     onSelectItem: (item: string) => void;
 }
 
-function ListGroup({items, heading, onSelectItem}: ListGroupProps) {
+const ListGroup = ({items, heading, onSelectItem}: ListGroupProps) => {
 
     //Hook
     const [ selectedIndex, setSelectedIndex ] = useState(-1);
